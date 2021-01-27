@@ -1,5 +1,6 @@
 /* an algorithm that accepts the a, b and c of a quadratic equation , as an input, and compute the real root and display , as an output.
-
+written date - 26-jan-2021
+written by - abdikitesa-tech
 DISPLAY "input the a, b and c of quadratic equation with formula a(x*x)+bx+c = 0"
 GET a, b, c
 
