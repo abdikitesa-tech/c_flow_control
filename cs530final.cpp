@@ -23,8 +23,8 @@ int main()
          << "4. End\n";
 
 
-    cin >> tableShape;
-while (tableShape >'4')
+    cin >> tableShape;  //accept shape choice
+while (tableShape >'4') // input validation
 {
     cout <<"Error – Invalid Entry. Please reenter a valid value\n";
         system("cls");
@@ -37,17 +37,17 @@ while (tableShape >'4')
 if(tableShape >= '1' && tableShape <= '3')
 {
     do{
-        if(tableShape == '1')
+        if(tableShape == '1')   // for table choice rectangle
         {   cout << "Enter the length of the table (in inches): ";
             cin >> tableLength;
-                 while (tableLength <= 0)
+                 while (tableLength <= 0) //validation of length input
                 {
                 cout << "Error – Length must be greater than zero. Please reenter a valid value";
                 cin >> tableLength;
                 }
                 cout << "Enter the width of the table (in inches): ";
                cin >> tableWidth;
-                 while (tableWidth <= 0)
+                 while (tableWidth <= 0) //validation of width input
                 {
                 cout << "Error – width must be greater than zero. Please reenter a valid value";
                 cin >> tableWidth;
@@ -63,7 +63,7 @@ if(tableShape >= '1' && tableShape <= '3')
                 cin >> materialType;
                 }
 
-                if(materialType == '1')
+                if(materialType == '1') //for material choice - laminate
                 {
                 tableArea = tableLength * tableWidth;
                 tableCost = tableArea * 0.125;
@@ -75,7 +75,7 @@ if(tableShape >= '1' && tableShape <= '3')
                      << "The table will be made of Laminate\n"
                      << "The cost of this table is $" << tableCost;
                 }
-                else
+                else        //for material choice - oak
                 {
                 tableArea = tableLength * tableWidth;
                 tableCost = tableArea * 0.25;
@@ -96,11 +96,11 @@ if(tableShape >= '1' && tableShape <= '3')
                     cin >> tableShape;
 
         }
-        else if(tableShape = '2')
+        else if(tableShape = '2')   // for table choice square
         {
                 cout << "Enter the length of the table (in inches): ";
                 cin >> tableLength;
-                while (tableLength <= 0)
+                while (tableLength <= 0)    //validation of length input
                 {
                 cout << "Error – Length must be greater than zero. Please reenter a valid value";
                 cin >> tableLength;
@@ -150,7 +150,7 @@ if(tableShape >= '1' && tableShape <= '3')
                     cin >> tableShape;
 
         }
-        else if(tableShape = '3')
+        else if(tableShape = '3')       // for table choice circle
         {
                 cout << "Enter the diameter of the table (in inches): ";
                 cin >> tableDiameter;
@@ -172,10 +172,10 @@ if(tableShape >= '1' && tableShape <= '3')
                 }
                 if(materialType == '1')
                 {
-                tableRadius = tableDiameter / 2.0;
+                tableRadius = tableDiameter / 2.0;          //find radius from diameter
                 tableArea = tableRadius * tableRadius * 3.14;
                 tableCost = tableArea * 0.125;
-                num_Of_tableEstm++;
+                num_Of_tableEstm++;                     //counter for number of table estimated
                 tableCostSum = tableCost + tableCostSum;
 
 
@@ -197,7 +197,7 @@ if(tableShape >= '1' && tableShape <= '3')
                      << "The table will be made of oak\n"
                      << "The cost of this table is $" << tableCost;
                 }
-                    cout <<"What shape of table do you want to build?\n"
+                    cout <<"What shape of table do you want to build?\n"    //request for additional input
                              << "1. Rectangular\n"
                              << "2. Square\n"
                              << "3. Circular\n"
@@ -210,8 +210,8 @@ if(tableShape >= '1' && tableShape <= '3')
     while (tableShape > '0' && tableShape <= '3' && tableShape != '4');
 
 }
-if (tableShape == '4')
-    {  if(num_Of_tableEstm == 0)
+if (tableShape == '4')      
+    {  if(num_Of_tableEstm == 0)        //if user leave without estimation request
         cout<<"no estimation requested";
         else
             {
