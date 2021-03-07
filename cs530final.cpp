@@ -1,3 +1,6 @@
+//written By Abdi Kitesa
+//Written Date: 7-Mar-2021
+
 #include <iostream>
 #include <stdlib.h>
 #include <iomanip>
@@ -11,8 +14,8 @@ int main()
     int num_Of_tableEstm = 0;
     bool materialTypeSel = 0;
 
-    cout << "Welcome to Tables – Yours One Stop Table Shop\n"
-         << "Dawit Lemma – Master Table Builder\n"
+    cout << "Welcome to Tables â€“ Yours One Stop Table Shop\n"
+         << "Dawit Lemma â€“ Master Table Builder\n"
          << "What shape of table do you want to build?\n"
          << "1. Rectangular\n"
          << "2. Square\n"
@@ -23,7 +26,7 @@ int main()
     cin >> tableShape;
 while (tableShape >'4')
 {
-    cout <<"Error – Invalid Entry. Please reenter a valid value\n";
+    cout <<"Error â€“ Invalid Entry. Please reenter a valid value\n";
         system("cls");
         cout <<"What shape of table do you want to build?\n"
          << "1. Rectangular\n"
@@ -39,14 +42,14 @@ if(tableShape >= '1' && tableShape <= '3')
             cin >> tableLength;
                  while (tableLength <= 0)
                 {
-                cout << "Error – Length must be greater than zero. Please reenter a valid value";
+                cout << "Error â€“ Length must be greater than zero. Please reenter a valid value";
                 cin >> tableLength;
                 }
                 cout << "Enter the width of the table (in inches): ";
                cin >> tableWidth;
                  while (tableWidth <= 0)
                 {
-                cout << "Error – width must be greater than zero. Please reenter a valid value";
+                cout << "Error â€“ width must be greater than zero. Please reenter a valid value";
                 cin >> tableWidth;
                 }
                 cout << "What type of material do you want to use?\n"
@@ -56,7 +59,7 @@ if(tableShape >= '1' && tableShape <= '3')
 
                 while (materialType <= '0' && materialType > '2')
                 {
-                cout << "Error – type of material must be either Laminated or Oak. Please reenter a valid value";
+                cout << "Error â€“ type of material must be either Laminated or Oak. Please reenter a valid value";
                 cin >> materialType;
                 }
 
@@ -99,7 +102,7 @@ if(tableShape >= '1' && tableShape <= '3')
                 cin >> tableLength;
                 while (tableLength <= 0)
                 {
-                cout << "Error – Length must be greater than zero. Please reenter a valid value";
+                cout << "Error â€“ Length must be greater than zero. Please reenter a valid value";
                 cin >> tableLength;
                 }
 
@@ -110,7 +113,7 @@ if(tableShape >= '1' && tableShape <= '3')
 
                 while (materialType <= '0' && materialType > '2')
                 {
-                cout << "Error – type of material must be either Laminated or Oak. Please reenter a valid value";
+                cout << "Error â€“ type of material must be either Laminated or Oak. Please reenter a valid value";
                 cin >> materialType;
                 }
                 if(materialType == '1')
@@ -153,7 +156,7 @@ if(tableShape >= '1' && tableShape <= '3')
                 cin >> tableDiameter;
                 while (tableDiameter <= 0)
                 {
-                cout << "Error – Length must be greater than zero. Please reenter a valid value";
+                cout << "Error â€“ Length must be greater than zero. Please reenter a valid value";
                 cin >> tableDiameter;
                 }
 
@@ -164,7 +167,7 @@ if(tableShape >= '1' && tableShape <= '3')
 
                 while (materialType <= '0' && materialType > '2')
                 {
-                cout << "Error – type of material must be either Laminated or Oak. Please reenter a valid value";
+                cout << "Error â€“ type of material must be either Laminated or Oak. Please reenter a valid value";
                 cin >> materialType;
                 }
                 if(materialType == '1')
