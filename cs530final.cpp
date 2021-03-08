@@ -9,6 +9,7 @@ int main()
 { cout << fixed << setprecision(2);// money
     char tableShape;
     float tableLength = 0,tableArea = 0,tableWidth = 0,tableDiameter = 0,tableRadius = 0,tableCost = 0,tableCostSum = 0;
+    const float M_PI = 3.14;
     char materialType;
     int ageTotal = 0;
     int num_Of_tableEstm = 0;
@@ -96,7 +97,7 @@ if(tableShape >= '1' && tableShape <= '3')
                     cin >> tableShape;
 
         }
-        else if(tableShape = '2')   // for table choice square
+        else if(tableShape == '2')   // for table choice square
         {
                 cout << "Enter the length of the table (in inches): ";
                 cin >> tableLength;
@@ -150,7 +151,7 @@ if(tableShape >= '1' && tableShape <= '3')
                     cin >> tableShape;
 
         }
-        else if(tableShape = '3')       // for table choice circle
+        else if(tableShape == '3')       // for table choice circle
         {
                 cout << "Enter the diameter of the table (in inches): ";
                 cin >> tableDiameter;
@@ -173,7 +174,7 @@ if(tableShape >= '1' && tableShape <= '3')
                 if(materialType == '1')
                 {
                 tableRadius = tableDiameter / 2.0;          //find radius from diameter
-                tableArea = tableRadius * tableRadius * 3.14;
+                tableArea = M_PI*tableRadius*tableRadius;
                 tableCost = tableArea * 0.125;
                 num_Of_tableEstm++;                     //counter for number of table estimated
                 tableCostSum = tableCost + tableCostSum;
