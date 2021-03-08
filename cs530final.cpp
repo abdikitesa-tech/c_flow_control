@@ -4,7 +4,7 @@
 #include <iostream>
 #include <stdlib.h>
 #include <iomanip>
-using namespace std;;
+using namespace std;
 int main()
 { cout << fixed << setprecision(2);// money
     char tableShape;
